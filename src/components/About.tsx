@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Award, CheckCircle2, Star } from 'lucide-react';
-import BrunoImage from '../assets/images/bruno_trainer_1783462362834.jpg'
+import BrunoImage from '../assets/images/bruno_trainer.jpeg'
 export default function About() {
   const highlights = [
     'Certified Peptide Specialist - ISSCA',
