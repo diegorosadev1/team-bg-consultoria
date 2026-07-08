@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Target, TrendingUp, Sparkles, Utensils, MessageCircle, Heart, Dumbbell, ShieldCheck, Flame } from 'lucide-react';
-
+import FemaleImage from '../assets/images/female_abs_1783462701946.jpg'
+import BrunoImage from '../assets/images/trainer_clipboard_1783462688330.jpg'
 interface BenefitsProps {
   onOpenAssessment: () => void;
 }
@@ -99,7 +100,7 @@ export default function Benefits({ onOpenAssessment }: BenefitsProps) {
                 className="absolute left-0 bottom-0 w-[180px] aspect-[3/4] overflow-hidden rounded-2xl border border-red-500/20 bg-zinc-900 shadow-2xl group"
               >
                 <img
-                  src="/src/assets/images/trainer_clipboard_1783462688330.jpg"
+                  src={BrunoImage}
                   alt="Bruno Gagliardi Consultoria"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover grayscale brightness-90 contrast-110 group-hover:scale-105 transition-all duration-700"
@@ -117,7 +118,7 @@ export default function Benefits({ onOpenAssessment }: BenefitsProps) {
                 className="absolute right-0 top-0 w-[180px] aspect-[3/4] overflow-hidden rounded-2xl border border-red-500/20 bg-zinc-900 shadow-2xl z-20 group"
               >
                 <img
-                  src="/src/assets/images/female_abs_1783462701946.jpg"
+                  src={FemaleImage}
                   alt="Resultado de Treino"
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover grayscale brightness-90 contrast-110 group-hover:scale-105 transition-all duration-700"
