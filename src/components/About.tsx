@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Award, CheckCircle2, Star } from 'lucide-react';
-
+import BrunoImage from '../assets/images/bruno_trainer_1783462362834.jpg'
 export default function About() {
   const highlights = [
     'Certified Peptide Specialist - ISSCA',
@@ -34,7 +34,7 @@ export default function About() {
               {/* Bio picture using the generated image */}
               <div className="relative w-full aspect-[4/5] rounded-none bg-zinc-950 overflow-hidden border border-white/5 mb-6 flex flex-col justify-end">
                 <img
-                  src="/src/assets/images/bruno_trainer.jpeg"
+                  src={BrunoImage}
                   alt="Bruno Gagliardi - Personal Trainer"
                   referrerPolicy="no-referrer"
                   className="absolute inset-0 w-full h-full object-cover  transition-all duration-500"

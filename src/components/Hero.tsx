@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Flame, Sparkles } from "lucide-react";
 import { CONFIG } from "../config";
-
+import BrunoImage from '../assets/images/bruno_trainer_1783462362834.jpg'
 interface HeroProps {
   onOpenAssessment: () => void;
 }
@@ -117,7 +117,7 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
               {/* Photo Container */}
               <div className="relative w-full aspect-[3/4] overflow-hidden bg-zinc-950 flex flex-col justify-end">
                 <img
-                  src="/src/assets/images/bruno_trainer_1783462362834.jpg"
+                  src={BrunoImage}
                   alt="Bruno Gagliardi - Personal Trainer"
                   referrerPolicy="no-referrer"
                   className="absolute inset-0 w-full h-full object-cover  group-hover:scale-105 transition-all duration-700"
