@@ -270,7 +270,7 @@ export default function Footer({ onOpenAssessment }: FooterProps) {
       </div>
 
       {/* Floating Action Button - Direct WhatsApp conversion */}
-      <div className="fixed bottom-6 right-6 z-50 flex items-center justify-center">
+      <div className="fixed bottom-6 left-6 z-50 flex items-center justify-center">
         {/* Pulsing ripple effects */}
         <span className="absolute inline-flex h-14 w-14 rounded-full bg-green-500 opacity-60 animate-ping pointer-events-none" />
         <span className="absolute inline-flex h-16 w-16 rounded-full bg-green-500 opacity-30 animate-ping pointer-events-none [animation-delay:0.3s]" />
