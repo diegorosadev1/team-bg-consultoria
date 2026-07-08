@@ -22,7 +22,7 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Hero Left Content */}
-          <div className="lg:col-span-7 space-y-6 text-left pt-45 sm:pt-8 lg:pt-0">
+          <div className="lg:col-span-7 space-y-6 text-left pt-35 sm:pt-8 lg:pt-0">
             {/* Main Heading & Subtitle */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
