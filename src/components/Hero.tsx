@@ -33,14 +33,32 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-4"
             >
-              <h1 className="font-display text-5xl sm:text-6xl xl:text-7xl font-black leading-[0.95] tracking-tight uppercase text-white">
-                CONQUISTE O SHAPE <br />
-                DOS SEUS SONHOS, <br />
-                ATRAVÉS DA <br />
-                <span className="text-red-500 italic">
-                  CONSULTORIA ESPECIALIZADA <br />
-                  TEAM BG
-                </span>
+              <h1 className="font-display font-black uppercase tracking-tight leading-[0.92]">
+                {/* Mobile */}
+                <div className="block lg:hidden text-[50px] text-white">
+                  <div>CONQUISTE O SHAPE</div>
+
+                  <div className="mt-2 italic">DOS SEUS SONHOS,</div>
+
+                  <div className="mt-6 italic">ATRAVÉS DA</div>
+
+                  <div className="mt-6 mb-6 text-red-500 italic">
+                    <div>CONSULTORIA</div>
+                    <div>ESPECIALIZADA</div>
+                  </div>
+                    <div className="text-red-500 italic">TEAM BG</div>
+                </div>
+
+                {/* Desktop */}
+                <div className="hidden lg:block text-7xl text-white">
+                  CONQUISTE O SHAPE <br />
+                  DOS SEUS SONHOS, <br />
+                  ATRAVÉS DA <br />
+                  <span className="text-red-500 italic">
+                    CONSULTORIA ESPECIALIZADA <br />
+                    TEAM BG
+                  </span>
+                </div>
               </h1>
               <p className="text-base text-zinc-300 max-w-2xl leading-relaxed">
                 Treino estratégico e plano alimentar sob medida para sua rotina.
