@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
-import { ArrowRight, Flame, Sparkles } from "lucide-react";
+import { Flame, Sparkles } from "lucide-react";
 import { CONFIG } from "../config";
-import BrunoImage from '../assets/images/bruno_trainer_1783462362834.jpg'
+import BrunoImage from "../assets/images/bruno_trainer.jpeg";
 interface HeroProps {
   onOpenAssessment: () => void;
 }
@@ -10,19 +10,22 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-28 pb-16 overflow-hidden bg-zinc-950"
+      className="relative min-h-screen flex items-center overflow-hidden bg-zinc-950 pt-36 lg:pt-28 pb-16"
     >
       {/* Background Gradients and Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-950 to-zinc-950 z-0" />
 
       {/* Red ambient background glow behind the trainer */}
       <div className="absolute right-0 top-10 w-[500px] h-[500px] bg-red-600/10 rounded-full blur-[140px] pointer-events-none z-0 hidden lg:block" />
-      <div className="absolute left-10 bottom-10 w-[300px] h-[300px] bg-red-850/5 rounded-full blur-[100px] pointer-events-none z-0" />
+      <div className="absolute left-10 bottom-10 w-[300px] h-[300px] bg-red-900/5 rounded-full blur-[100px] pointer-events-none z-0" />
 
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-8">
+        {" "}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-center">
+          {" "}
           {/* Hero Left Content */}
-          <div className="lg:col-span-7 space-y-6 text-left pt-35 sm:pt-8 lg:pt-0">
+          <div className="lg:col-span-7 max-w-[720px] space-y-8 text-left">
+            {" "}
             {/* Main Heading & Subtitle */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
@@ -30,7 +33,7 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
               transition={{ duration: 0.6, delay: 0.1 }}
               className="space-y-4"
             >
-              <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black leading-[1.05] tracking-tighter uppercase text-white">
+              <h1 className="font-display text-5xl sm:text-6xl xl:text-7xl font-black leading-[0.95] tracking-tight uppercase text-white">
                 CONQUISTE O SHAPE <br />
                 DOS SEUS SONHOS, <br />
                 ATRAVÉS DA <br />
@@ -45,7 +48,6 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
                 acompanhamento próximo e individualizado.
               </p>
             </motion.div>
-
             {/* CTA button with bottom small caption */}
             <motion.div
               initial={{ opacity: 0, y: 15 }}
@@ -68,7 +70,6 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
                 constante.
               </p>
             </motion.div>
-
             {/* Trust Badges */}
             <motion.div
               initial={{ opacity: 0 }}
@@ -104,7 +105,6 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
               </div>
             </motion.div>
           </div>
-
           {/* Hero Right Visual Column - Cutout Trainer with Glow background */}
           <div className="lg:col-span-5 relative flex justify-center lg:justify-end">
             <motion.div
@@ -125,8 +125,13 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
 
                 {/* Red lighting gradient overlap overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent z-10" />
-                <div className="absolute inset-0 bg-radial-gradient(circle_at_bottom,_var(--tw-gradient-stops)) from-red-600/10 via-transparent to-transparent z-10 opacity-70" />
-
+                <div
+                  className="absolute inset-0 z-10 opacity-70"
+                  style={{
+                    background:
+                      "radial-gradient(circle at bottom, rgba(220,38,38,.18) 0%, transparent 70%)",
+                  }}
+                />
                 {/* Info badge */}
                 <div className="absolute top-4 left-4 z-20">
                   <span className="px-2.5 py-1 bg-black/85 border border-red-600/40 text-[9px] font-black tracking-widest text-red-500 flex items-center gap-1.5">

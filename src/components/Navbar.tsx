@@ -69,7 +69,7 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
             <img
               src={logo}
               alt="BG Consultoria Fitness"
-              className=" h-40 object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-20 lg:h-24 object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </a>
 
