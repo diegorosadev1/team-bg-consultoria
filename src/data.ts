@@ -162,46 +162,7 @@ export const TRANSFORMATION_CASES: TransformationCase[] = [
       fatPercentage: "Maior definição muscular",
     },
   },
-  {
-    id: "6",
-    name: "Aluna Team BG",
-    age: 28,
-    goal: "Emagrecimento",
-    duration: "4 meses",
-    beforeImg: resultados6,
-    afterImg: resultados6,
-    stats: {
-      weight: "Redução consistente de gordura",
-      fatPercentage: "Silhueta mais definida",
-    },
-  },
 
-  {
-    id: "8",
-    name: "Aluna Team BG",
-    age: 35,
-    goal: "Definição",
-    duration: "5 meses",
-    beforeImg: resultados8,
-    afterImg: resultados8,
-    stats: {
-      weight: "Melhora na composição corporal",
-      fatPercentage: "Mais definição abdominal",
-    },
-  },
-  {
-    id: "9",
-    name: "Aluno Team BG",
-    age: 27,
-    goal: "Recomposição Corporal",
-    duration: "6 meses",
-    beforeImg: resultados9,
-    afterImg: resultados9,
-    stats: {
-      weight: "Aumento de massa e redução de gordura",
-      fatPercentage: "Físico mais atlético",
-    },
-  },
   {
     id: "10",
     name: "Aluno Team BG",
@@ -228,19 +189,7 @@ export const TRANSFORMATION_CASES: TransformationCase[] = [
       fatPercentage: "Redução visível do percentual de gordura",
     },
   },
-  {
-    id: "12",
-    name: "Aluno Team BG",
-    age: 36,
-    goal: "Definição",
-    duration: "10 meses",
-    beforeImg: resultados12,
-    afterImg: resultados12,
-    stats: {
-      weight: "Físico mais definido e musculoso",
-      fatPercentage: "Alta definição muscular",
-    },
-  },
+ 
 ];
 
 export const FAQ_ITEMS: FaqItem[] = [

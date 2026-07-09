@@ -10,7 +10,7 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center overflow-hidden bg-zinc-950 pt-36 lg:pt-28 pb-16"
+      className="relative flex items-center min-h-[calc(100vh-88px)] overflow-hidden bg-zinc-950 pt-32 lg:pt-20 xl:pt-24 pb-16"
     >
       {/* Background Gradients and Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-950 to-zinc-950 z-0" />
@@ -21,10 +21,10 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-8">
         {" "}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-center">
+        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-12 items-center">
           {" "}
           {/* Hero Left Content */}
-          <div className="lg:col-span-7 max-w-[720px] space-y-8 text-left">
+          <div className="lg:col-span-7 max-w-[650px] xl:max-w-[720px] space-y-8 text-left">
             {" "}
             {/* Main Heading & Subtitle */}
             <motion.div
@@ -41,16 +41,16 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
                   <div className="mt-2 italic">DOS SEUS SONHOS,</div>
 
                   <div className="mt-6 italic">ATRAVÉS DA</div>
-
                   <div className="mt-6 mb-6 text-red-500 italic">
                     <div>CONSULTORIA</div>
                     <div>ESPECIALIZADA</div>
                   </div>
-                    <div className="text-red-500 italic">TEAM BG</div>
+                  <div className="text-red-500 italic">TEAM BG</div>
                 </div>
 
                 {/* Desktop */}
-                <div className="hidden lg:block text-7xl text-white">
+                <div className="hidden lg:block text-[56px] xl:text-[64px] 2xl:text-[72px] text-white leading-[0.95]">
+                  {" "}
                   CONQUISTE O SHAPE <br />
                   DOS SEUS SONHOS, <br />
                   ATRAVÉS DA <br />
