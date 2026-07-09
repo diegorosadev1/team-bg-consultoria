@@ -10,7 +10,11 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
   return (
     <section
       id="home"
-      className="relative flex items-center min-h-[calc(100vh-88px)] overflow-hidden bg-zinc-950 pt-32 lg:pt-20 xl:pt-24 pb-16"
+      className="
+        relative flex items-center min-h-[calc(100vh-88px)] overflow-hidden bg-zinc-950 pt-36
+        md:pt-32
+        lg:pt-24
+        xl:pt-28 pb-16"
     >
       {/* Background Gradients and Effects */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-zinc-950 to-zinc-950 z-0" />
@@ -21,7 +25,7 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-8 lg:px-8">
         {" "}
-        <div className="grid grid-cols-1 xl:grid-cols-12 gap-8 xl:gap-12 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-center">
           {" "}
           {/* Hero Left Content */}
           <div className="lg:col-span-7 max-w-[650px] xl:max-w-[720px] space-y-8 text-left">
@@ -49,7 +53,11 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
                 </div>
 
                 {/* Desktop */}
-                <div className="hidden lg:block text-[56px] xl:text-[64px] 2xl:text-[72px] text-white leading-[0.95]">
+                <div
+                  className="hidden lg:block text-[52px]
+                            xl:text-[60px]
+                            2xl:text-[68px] text-white leading-[0.95]"
+                >
                   {" "}
                   CONQUISTE O SHAPE <br />
                   DOS SEUS SONHOS, <br />
@@ -129,7 +137,7 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="relative w-full max-w-sm overflow-hidden border border-white/5 bg-zinc-900/40 backdrop-blur-sm shadow-2xl p-4 rounded-none group hover:border-red-600/30 transition-all duration-500"
+              className="relative w-full xl:max-w-md overflow-hidden border border-white/5 bg-zinc-900/40 backdrop-blur-sm shadow-2xl p-4 rounded-none group hover:border-red-600/30 transition-all duration-500"
               id="hero-trainer-card"
             >
               {/* Photo Container */}
