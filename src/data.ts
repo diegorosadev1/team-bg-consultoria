@@ -15,7 +15,7 @@ export const PLANS: Plan[] = [
   {
     id: "mensal",
     name: "Plano Mensal",
-    price: 239,
+    price: 199,
     months: 1,
     monthlyPrice: 239,
     features: [
