@@ -36,7 +36,7 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
-      const offset = 80; // height of navbar
+      const offset = 100; // height of navbar
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -52,13 +52,20 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-black border-b border-zinc-900 ${
-        scrolled ? "py-3 shadow-lg shadow-black/50" : "py-5"
-      }`}
+      className={`
+      fixed inset-x-0 top-0 z-40
+      h-24
+      bg-black/95
+      backdrop-blur-md
+      border-b border-zinc-900
+      transition-all duration-300
+        ${scrolled ? "shadow-lg shadow-black/40" : ""}
+        `}
       id="main-navigation"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="h-full flex items-center justify-between">
+          {" "}
           {/* Logo Branding */}
           <a
             href="#home"
@@ -69,10 +76,16 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
             <img
               src={logo}
               alt="BG Consultoria Fitness"
-              className="h-20 lg:h-24 object-contain transition-transform duration-300 group-hover:scale-105"
+              className="
+                h-14
+                sm:h-16
+                lg:h-20
+                object-contain
+                transition-transform duration-300
+                group-hover:scale-105
+                "
             />
           </a>
-
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <div className="flex items-center gap-6">
@@ -88,7 +101,6 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
               ))}
             </div>
           </div>
-
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-3">
             <button

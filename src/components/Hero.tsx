@@ -11,7 +11,7 @@ export default function Hero({ onOpenAssessment }: HeroProps) {
     <section
       id="home"
       className="
-        relative flex items-center min-h-[calc(100vh-88px)] overflow-hidden bg-zinc-950 pt-36
+        relative flex items-center min-h-[calc(100vh-88px)] overflow-hidden bg-zinc-950 pt-24
         md:pt-32
         lg:pt-24
         xl:pt-28 pb-16"
