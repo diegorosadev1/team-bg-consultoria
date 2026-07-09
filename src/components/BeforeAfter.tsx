@@ -1,7 +1,7 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { motion } from 'motion/react';
-import { TRANSFORMATION_CASES } from '../data';
-import { ChevronLeft, ChevronRight, Flame } from 'lucide-react';
+import React, { useState, useEffect, useRef } from "react";
+import { motion } from "motion/react";
+import { TRANSFORMATION_CASES } from "../data";
+import { ChevronLeft, ChevronRight, Flame } from "lucide-react";
 
 interface BeforeAfterProps {
   onOpenAssessment?: () => void;
@@ -103,15 +103,17 @@ export default function BeforeAfter({ onOpenAssessment }: BeforeAfterProps) {
   const realIndex = activeIndex % N;
 
   return (
-    <section id="results" className="relative py-24 bg-zinc-950 overflow-hidden border-t border-b border-white/5">
-      
+    <section
+      id="results"
+      className="relative py-24 bg-zinc-950 overflow-hidden border-t border-b border-white/5"
+    >
       {/* Background Thin Red Grid Lines ('faixas vermelhas por trás') exactly like the shared screenshot */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden opacity-30">
         {/* Horizontal grid lines */}
         <div className="absolute top-[20%] left-0 right-0 h-[1px] bg-red-600/15" />
         <div className="absolute top-[50%] left-0 right-0 h-[1px] bg-red-600/20" />
         <div className="absolute top-[80%] left-0 right-0 h-[1px] bg-red-600/15" />
-        
+
         {/* Vertical grid lines */}
         <div className="absolute left-[15%] top-0 bottom-0 w-[1px] bg-red-600/15" />
         <div className="absolute left-[50%] top-0 bottom-0 w-[1px] bg-red-600/20" />
@@ -122,41 +124,41 @@ export default function BeforeAfter({ onOpenAssessment }: BeforeAfterProps) {
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white uppercase tracking-tight">
-            RESULTADOS QUE <span className="text-red-500 italic">COMPROVAM O MÉTODO</span>
+            RESULTADOS QUE{" "}
+            <span className="text-red-500 italic">COMPROVAM O MÉTODO</span>
           </h2>
         </div>
 
         {/* Carousel Container */}
-        <div 
-          className="relative max-w-5xl mx-auto px-4 sm:px-12"
+        <div
+          className="relative max-w-5xl mx-auto px-12 sm:px-14"
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
           {/* Left Arrow */}
           <button
             onClick={handlePrev}
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-30 p-2 text-white/50 hover:text-white transition-colors cursor-pointer hidden sm:block"
+            className="absolute left-2 sm:left-0 top-1/2 -translate-y-1/2 z-30 flex h-10 w-10 sm:h-auto sm:w-auto items-center justify-center rounded-full bg-black/70 backdrop-blur-md text-white hover:bg-red-600 transition-all cursor-pointer"
             aria-label="Anterior"
           >
-            <ChevronLeft className="w-8 h-8" />
+            <ChevronLeft className="w-5 h-5 sm:w-8 sm:h-8" />
           </button>
 
           {/* Right Arrow */}
           <button
             onClick={handleNext}
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-30 p-2 text-white/50 hover:text-white transition-colors cursor-pointer hidden sm:block"
+            className="absolute right-2 sm:right-0 top-1/2 -translate-y-1/2 z-30 flex h-10 w-10 sm:h-auto sm:w-auto items-center justify-center rounded-full bg-black/70 backdrop-blur-md text-white hover:bg-red-600 transition-all cursor-pointer"
             aria-label="Próximo"
           >
-            <ChevronRight className="w-8 h-8" />
+            <ChevronRight className="w-5 h-5 sm:w-8 sm:h-8" />
           </button>
 
           {/* Sliding Viewport Container */}
-          <div 
-            ref={containerRef} 
+          <div
+            ref={containerRef}
             className="w-full overflow-hidden py-8 cursor-grab active:cursor-grabbing"
           >
             <motion.div
@@ -168,7 +170,7 @@ export default function BeforeAfter({ onOpenAssessment }: BeforeAfterProps) {
               }
               onAnimationComplete={handleAnimationComplete}
               className="flex items-stretch gap-6"
-              style={{ width: 'max-content' }}
+              style={{ width: "max-content" }}
             >
               {extendedCases.map((caseItem, i) => {
                 return (
@@ -188,36 +190,42 @@ export default function BeforeAfter({ onOpenAssessment }: BeforeAfterProps) {
                         <div className="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[9px] text-red-600 font-black italic">
                           BG
                         </div>
-                        <span className="text-[10px] font-black tracking-widest text-white leading-none">TEAM</span>
+                        <span className="text-[10px] font-black tracking-widest text-white leading-none">
+                          TEAM
+                        </span>
                       </div>
                     </div>
 
                     {/* Split Image Showcase (Antes vs Depois) with angled cut */}
                     <div className="relative w-full aspect-[4/3] overflow-hidden bg-zinc-950 select-none">
-                      
                       {/* Before Image (Left angle) */}
-                      <div 
-                        className="absolute inset-0 z-10" 
-                        style={{ clipPath: 'polygon(0 0, 52% 0, 48% 100%, 0 100%)' }}
+                      <div
+                        className="absolute inset-0 z-10"
+                        style={{
+                          clipPath: "polygon(0 0, 52% 0, 48% 100%, 0 100%)",
+                        }}
                       >
-                        <img 
-                          src={caseItem.beforeImg} 
+                        <img
+                          src={caseItem.beforeImg}
                           alt="Antes"
                           referrerPolicy="no-referrer"
-                          className="w-full h-full object-cover grayscale brightness-90" 
+                          className="w-full h-full object-cover grayscale brightness-90"
                         />
                       </div>
 
                       {/* After Image (Right angle) */}
-                      <div 
-                        className="absolute inset-0 z-10" 
-                        style={{ clipPath: 'polygon(52% 0, 100% 0, 100% 100%, 48% 100%)' }}
+                      <div
+                        className="absolute inset-0 z-10"
+                        style={{
+                          clipPath:
+                            "polygon(52% 0, 100% 0, 100% 100%, 48% 100%)",
+                        }}
                       >
-                        <img 
-                          src={caseItem.afterImg} 
+                        <img
+                          src={caseItem.afterImg}
                           alt="Depois"
                           referrerPolicy="no-referrer"
-                          className="w-full h-full object-cover" 
+                          className="w-full h-full object-cover"
                         />
                       </div>
 
@@ -228,24 +236,33 @@ export default function BeforeAfter({ onOpenAssessment }: BeforeAfterProps) {
                     {/* Bottom "ANTES" / "DEPOIS" bar with matching diagonal cut */}
                     <div className="relative h-9 w-full overflow-hidden select-none border-t border-white/5">
                       {/* Background slants */}
-                      <div 
-                        className="absolute inset-0 bg-zinc-800" 
-                        style={{ clipPath: 'polygon(0 0, 51% 0, 49% 100%, 0 100%)' }}
+                      <div
+                        className="absolute inset-0 bg-zinc-800"
+                        style={{
+                          clipPath: "polygon(0 0, 51% 0, 49% 100%, 0 100%)",
+                        }}
                       />
-                      <div 
-                        className="absolute inset-0 bg-zinc-950" 
-                        style={{ clipPath: 'polygon(51% 0, 100% 0, 100% 100%, 49% 100%)' }}
+                      <div
+                        className="absolute inset-0 bg-zinc-950"
+                        style={{
+                          clipPath:
+                            "polygon(51% 0, 100% 0, 100% 100%, 49% 100%)",
+                        }}
                       />
 
                       {/* Text overlays on top of slants, centered on each half */}
                       <div className="absolute inset-0 flex z-10">
                         {/* Left "ANTES" Half */}
                         <div className="w-1/2 flex items-center justify-center pr-3">
-                          <span className="text-[9px] font-black text-white tracking-widest uppercase">ANTES</span>
+                          <span className="text-[9px] font-black text-white tracking-widest uppercase">
+                            ANTES
+                          </span>
                         </div>
                         {/* Right "DEPOIS" Half */}
                         <div className="w-1/2 flex items-center justify-center pl-3">
-                          <span className="text-[9px] font-black text-white tracking-widest uppercase">DEPOIS</span>
+                          <span className="text-[9px] font-black text-white tracking-widest uppercase">
+                            DEPOIS
+                          </span>
                         </div>
                       </div>
 
@@ -255,7 +272,9 @@ export default function BeforeAfter({ onOpenAssessment }: BeforeAfterProps) {
 
                     {/* Student Details overlaying below card */}
                     <div className="p-5 text-center border-t border-white/5 bg-zinc-950/80 flex-1 flex flex-col justify-center">
-                      <span className="block text-xs sm:text-sm font-black text-white uppercase tracking-wider">{caseItem.name}</span>
+                      <span className="block text-xs sm:text-sm font-black text-white uppercase tracking-wider">
+                        {caseItem.name}
+                      </span>
                       <span className="text-[10px] text-red-500 font-bold uppercase tracking-widest mt-1.5 block">
                         {caseItem.stats.weight}
                       </span>
@@ -278,7 +297,9 @@ export default function BeforeAfter({ onOpenAssessment }: BeforeAfterProps) {
                   key={idx}
                   onClick={() => handleDotClick(idx)}
                   className={`w-1.5 h-1.5 rounded-full transition-all cursor-pointer ${
-                    isActive ? 'bg-red-600 w-3' : 'bg-white/25 hover:bg-white/50'
+                    isActive
+                      ? "bg-red-600 w-3"
+                      : "bg-white/25 hover:bg-white/50"
                   }`}
                   aria-label={`Ir para slide ${idx + 1}`}
                 />
@@ -297,7 +318,6 @@ export default function BeforeAfter({ onOpenAssessment }: BeforeAfterProps) {
               QUERO COMEÇAR AGORA
             </button>
           </div>
-
         </div>
       </div>
     </section>

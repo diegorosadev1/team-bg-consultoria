@@ -3,6 +3,13 @@ import resultados1 from "./assets/images/resultados1.png";
 import resultados2 from "./assets/images/resultados2.png";
 import resultados3 from "./assets/images/resultados3.png";
 import resultados4 from "./assets/images/resultados4.png";
+import resultados5 from "./assets/images/resultados5.png";
+import resultados6 from "./assets/images/resultados6.png";
+import resultados8 from "./assets/images/resultados8.png";
+import resultados9 from "./assets/images/resultados9.png";
+import resultados10 from "./assets/images/resultados10.png";
+import resultados11 from "./assets/images/resultados11.png";
+import resultados12 from "./assets/images/resultados12.png";
 
 export const PLANS: Plan[] = [
   {
@@ -140,6 +147,98 @@ export const TRANSFORMATION_CASES: TransformationCase[] = [
     stats: {
       weight: "Ganho de massa muscular e definição",
       fatPercentage: "Redução do percentual de gordura",
+    },
+  },
+  {
+    id: "5",
+    name: "Aluno Team BG",
+    age: 30,
+    goal: "Hipertrofia",
+    duration: "7 meses",
+    beforeImg: resultados5,
+    afterImg: resultados5,
+    stats: {
+      weight: "Aumento significativo de massa magra",
+      fatPercentage: "Maior definição muscular",
+    },
+  },
+  {
+    id: "6",
+    name: "Aluna Team BG",
+    age: 28,
+    goal: "Emagrecimento",
+    duration: "4 meses",
+    beforeImg: resultados6,
+    afterImg: resultados6,
+    stats: {
+      weight: "Redução consistente de gordura",
+      fatPercentage: "Silhueta mais definida",
+    },
+  },
+
+  {
+    id: "8",
+    name: "Aluna Team BG",
+    age: 35,
+    goal: "Definição",
+    duration: "5 meses",
+    beforeImg: resultados8,
+    afterImg: resultados8,
+    stats: {
+      weight: "Melhora na composição corporal",
+      fatPercentage: "Mais definição abdominal",
+    },
+  },
+  {
+    id: "9",
+    name: "Aluno Team BG",
+    age: 27,
+    goal: "Recomposição Corporal",
+    duration: "6 meses",
+    beforeImg: resultados9,
+    afterImg: resultados9,
+    stats: {
+      weight: "Aumento de massa e redução de gordura",
+      fatPercentage: "Físico mais atlético",
+    },
+  },
+  {
+    id: "10",
+    name: "Aluno Team BG",
+    age: 32,
+    goal: "Hipertrofia",
+    duration: "9 meses",
+    beforeImg: resultados10,
+    afterImg: resultados10,
+    stats: {
+      weight: "Excelente ganho muscular",
+      fatPercentage: "Maior densidade muscular",
+    },
+  },
+  {
+    id: "11",
+    name: "Aluna Team BG",
+    age: 29,
+    goal: "Emagrecimento",
+    duration: "3 meses",
+    beforeImg: resultados11,
+    afterImg: resultados11,
+    stats: {
+      weight: "Transformação expressiva",
+      fatPercentage: "Redução visível do percentual de gordura",
+    },
+  },
+  {
+    id: "12",
+    name: "Aluno Team BG",
+    age: 36,
+    goal: "Definição",
+    duration: "10 meses",
+    beforeImg: resultados12,
+    afterImg: resultados12,
+    stats: {
+      weight: "Físico mais definido e musculoso",
+      fatPercentage: "Alta definição muscular",
     },
   },
 ];
