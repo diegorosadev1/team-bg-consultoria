@@ -53,15 +53,14 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
   return (
     <nav
       className={`
-      fixed inset-x-0 top-0 z-40
-      h-24
-      bg-black/95
-      backdrop-blur-md
-      border-b border-zinc-900
-      transition-all duration-300
-        ${scrolled ? "shadow-lg shadow-black/40" : ""}
-        `}
-      id="main-navigation"
+    fixed inset-x-0 top-0 z-40
+    h-24 lg:h-28
+    bg-black/95
+    backdrop-blur-md
+    border-b border-zinc-900
+    transition-all duration-300
+    ${scrolled ? "shadow-lg shadow-black/40" : ""}
+  `}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="h-full flex items-center justify-between">
@@ -77,13 +76,14 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
               src={logo}
               alt="BG Consultoria Fitness"
               className="
-                h-14
-                sm:h-16
-                lg:h-20
-                object-contain
-                transition-transform duration-300
-                group-hover:scale-105
-                "
+    h-25
+    sm:h-24
+    lg:h-28
+    w-auto
+    object-contain
+    transition-transform duration-300
+    group-hover:scale-105
+  "
             />
           </a>
           {/* Desktop Navigation */}
