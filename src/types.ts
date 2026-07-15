@@ -6,6 +6,8 @@ export interface Plan {
   monthlyPrice: number;
   highlighted?: boolean;
   tag?: string;
+  durationLabel?: string;
+  shortName?: string;
   features: string[];
 }
 
