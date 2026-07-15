@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { Award, CheckCircle2, Star } from 'lucide-react';
-import BrunoImage from '../assets/images/bruno_trainer.jpeg'
+
 export default function About() {
   const highlights = [
     'Certified Peptide Specialist - ISSCA',
@@ -34,10 +34,10 @@ export default function About() {
               {/* Bio picture using the generated image */}
               <div className="relative w-full aspect-[4/5] rounded-none bg-zinc-950 overflow-hidden border border-white/5 mb-6 flex flex-col justify-end">
                 <img
-                  src={BrunoImage}
+                  src="/src/assets/images/bruno_trainer_1783462362834.jpg"
                   alt="Bruno Gagliardi - Personal Trainer"
                   referrerPolicy="no-referrer"
-                  className="absolute inset-0 w-full h-full object-cover  transition-all duration-500"
+                  className="absolute inset-0 w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent z-10" />
                 <div className="relative z-10 p-5">
@@ -47,7 +47,7 @@ export default function About() {
                   </div>
                   <h3 className="text-xl font-black italic uppercase tracking-tighter text-white leading-none">BRUNO GAGLIARDI</h3>
                   <span className="text-[9px] text-zinc-400 font-black uppercase tracking-widest mt-1 block">
-                    Mentor & Coach de Performance
+                    COACH & ATLETA DE FISICULTURISMO
                   </span>
                 </div>
               </div>
@@ -86,7 +86,7 @@ export default function About() {
                 Minha jornada na musculação começou há 22 anos, quando eu era um adolescente acima do peso e resolvi mudar a minha aparência. Desde então, venho estudando e aprimorando meus conhecimentos em métodos de treinamento e dieta.
               </p>
               <p className="font-semibold text-zinc-300">
-                Com anos de estudo e dedicação na prática, desenvolvi um método focado em gerar resultados reais e definitivos para qualquer pessoa. Aplico o que há de mais moderno em otimização metabólica para oferecer um acompanhamento realmente personalizado e eficiente.
+                Com anos de estudo e dedicação na prática, inclusive atleta de fisiculturismo, desenvolvi um método focado em gerar resultados reais e definitivos para qualquer pessoa. Aplico o que há de mais moderno em otimização metabólica para oferecer um acompanhamento realmente personalizado e eficiente.
               </p>
               
               {/* Highlighted Box styled exactly like Leandro Twin's site */}

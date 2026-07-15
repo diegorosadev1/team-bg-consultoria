@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Flame, Sparkles } from "lucide-react";
 import { CONFIG } from "../config";
-import BrunoImage from "../assets/images/bruno_trainer_1783462362834.jpg";
+import BrunoImage from "../assets/images/bruno_trainer.jpeg";
 interface HeroProps {
   onOpenAssessment: () => void;
 }
