@@ -15,6 +15,10 @@ import Depoimento1 from "../assets/images/depoimento1.png";
 import Depoimento2 from "../assets/images/depoimento2.png";
 import Depoimento3 from "../assets/images/depoimento3.png";
 import Depoimento4 from "../assets/images/depoimento4.png";
+import Depoimento5 from "../assets/images/depoimento5.png";
+import Depoimento6 from "../assets/images/depoimento6.png";
+import Depoimento7 from "../assets/images/depoimento7.png";
+
 
 // ==========================================
 // TYPES
@@ -87,6 +91,24 @@ const TESTIMONIALS: Testimonial[] = [
     id: "t4",
     name: "Depoimento 4",
     image: Depoimento4,
+    duration: "Aluno BG",
+  },
+    {
+    id: "t5",
+    name: "Depoimento 5",
+    image: Depoimento5,
+    duration: "Aluno BG",
+  },
+    {
+    id: "t6",
+    name: "Depoimento 6",
+    image: Depoimento6,
+    duration: "Aluno BG",
+  },
+    {
+    id: "t7",
+    name: "Depoimento 7",
+    image: Depoimento7,
     duration: "Aluno BG",
   },
 ];

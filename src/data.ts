@@ -1,4 +1,15 @@
 import { Plan, TransformationCase, FaqItem } from './types';
+import resultados1 from "./assets/images/resultados1.png";
+import resultados2 from "./assets/images/resultados2.png";
+import resultados3 from "./assets/images/resultados3.png";
+import resultados4 from "./assets/images/resultados4.png";
+import resultados5 from "./assets/images/resultados5.png";
+import resultados6 from "./assets/images/resultados6.png";
+import resultados8 from "./assets/images/resultados8.png";
+import resultados9 from "./assets/images/resultados9.png";
+import resultados10 from "./assets/images/resultados10.png";
+import resultados11 from "./assets/images/resultados11.png";
+import resultados12 from "./assets/images/resultados12.png";
 
 export const PLANS: Plan[] = [
   {
@@ -112,72 +123,101 @@ export const PLANS: Plan[] = [
   }
 ];
 
+
 export const TRANSFORMATION_CASES: TransformationCase[] = [
   {
-    id: '1',
-    name: 'Lucas Silva',
-    age: 28,
-    goal: 'Hipertrofia & Definição',
-    duration: '3 meses',
-    beforeImg: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?q=80&w=600&auto=format&fit=crop',
-    stats: {
-      weight: 'De 86kg para 79kg (-7kg de gordura)',
-      fatPercentage: 'De 22% para 11% (-11%)'
-    }
-  },
-  {
-    id: '2',
-    name: 'Mariana Costa',
-    age: 31,
-    goal: 'Recomposição Corporal',
-    duration: '4 meses',
-    beforeImg: 'https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=600&auto=format&fit=crop',
-    stats: {
-      weight: 'De 68kg para 62kg (-6kg)',
-      fatPercentage: 'De 28% para 17% (-11%)'
-    }
-  },
-  {
-    id: '3',
-    name: 'Rodrigo Alves',
+    id: "1",
+    name: "Aluno Team BG",
     age: 26,
-    goal: 'Hipertrofia Máxima',
-    duration: '6 meses',
-    beforeImg: 'https://images.unsplash.com/photo-1594381898411-846e7d193883?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?q=80&w=600&auto=format&fit=crop',
+    goal: "Hipertrofia",
+    duration: "6 meses",
+    beforeImg: resultados1,
+    afterImg: resultados1,
     stats: {
-      weight: 'De 71kg para 82kg (+11kg de massa magra)',
-      fatPercentage: 'De 10% para 12% (Limpo)'
-    }
+      weight: "Ganho expressivo de massa muscular",
+      fatPercentage: "Mais definição e volume muscular",
+    },
   },
   {
-    id: '4',
-    name: 'Felipe Camargo',
+    id: "2",
+    name: "Aluna Team BG",
+    age: 31,
+    goal: "Emagrecimento",
+    duration: "2 meses",
+    beforeImg: resultados2,
+    afterImg: resultados2,
+    stats: {
+      weight: "Redução visível de gordura corporal",
+      fatPercentage: "Cintura mais fina e glúteos mais firmes",
+    },
+  },
+  {
+    id: "3",
+    name: "Aluno Team BG",
+    age: 34,
+    goal: "Definição",
+    duration: "5 meses",
+    beforeImg: resultados3,
+    afterImg: resultados3,
+    stats: {
+      weight: "Grande evolução na composição corporal",
+      fatPercentage: "Abdômen definido e maior vascularização",
+    },
+  },
+  {
+    id: "4",
+    name: "Aluno Team BG",
     age: 29,
-    goal: 'Secar e Definir',
-    duration: '2 meses',
-    beforeImg: 'https://images.unsplash.com/photo-1508615070457-7baeba4003ab?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600&auto=format&fit=crop',
+    goal: "Recomposição Corporal",
+    duration: "5 meses",
+    beforeImg: resultados4,
+    afterImg: resultados4,
     stats: {
-      weight: 'De 94kg para 84kg (-10kg de peso)',
-      fatPercentage: 'De 24% para 14% (-10%)'
-    }
+      weight: "Ganho de massa muscular e definição",
+      fatPercentage: "Redução do percentual de gordura",
+    },
   },
   {
-    id: '5',
-    name: 'Amanda Ramos',
-    age: 25,
-    goal: 'Definição Abdominal',
-    duration: '5 meses',
-    beforeImg: 'https://images.unsplash.com/photo-1518310383802-640c2de311b2?q=80&w=600&auto=format&fit=crop',
-    afterImg: 'https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?q=80&w=600&auto=format&fit=crop',
+    id: "5",
+    name: "Aluno Team BG",
+    age: 30,
+    goal: "Hipertrofia",
+    duration: "7 meses",
+    beforeImg: resultados5,
+    afterImg: resultados5,
     stats: {
-      weight: 'De 64kg para 58kg (-6kg)',
-      fatPercentage: 'De 26% para 16% (-10%)'
-    }
-  }
+      weight: "Aumento significativo de massa magra",
+      fatPercentage: "Maior definição muscular",
+    },
+  },
+
+  {
+    id: "10",
+    name: "Aluno Team BG",
+    age: 32,
+    goal: "Hipertrofia",
+    duration: "9 meses",
+    beforeImg: resultados10,
+    afterImg: resultados10,
+    stats: {
+      weight: "Excelente ganho muscular",
+      fatPercentage: "Maior densidade muscular",
+    },
+  },
+  {
+    id: "11",
+    name: "Aluna Team BG",
+    age: 29,
+    goal: "Emagrecimento",
+    duration: "3 meses",
+    beforeImg: resultados11,
+    afterImg: resultados11,
+    stats: {
+      weight: "Transformação expressiva",
+      fatPercentage: "Redução visível do percentual de gordura",
+    },
+  },
+ 
 ];
 
 export const FAQ_ITEMS: FaqItem[] = [
