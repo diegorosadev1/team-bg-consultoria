@@ -37,7 +37,7 @@ export default function About() {
                   src="/src/assets/images/bruno_trainer_1783462362834.jpg"
                   alt="Bruno Gagliardi - Personal Trainer"
                   referrerPolicy="no-referrer"
-                  className="absolute inset-0 w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 transition-all duration-500"
+                  className="absolute inset-0 w-full h-full object-cover  transition-all duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-zinc-950 via-zinc-950/20 to-transparent z-10" />
                 <div className="relative z-10 p-5">
