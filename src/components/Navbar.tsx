@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Menu, X, Dumbbell, Award, PhoneCall } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
-import { getWhatsAppUrl } from "../config";
+import React, { useState, useEffect } from 'react';
+import { Menu, X, Dumbbell, Award, PhoneCall } from 'lucide-react';
+import { motion, AnimatePresence } from 'motion/react';
+import { getWhatsAppUrl } from '../config';
 import logo from "../assets/images/logo.png";
 
 interface NavbarProps {
@@ -16,27 +16,24 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const menuItems = [
-    { label: "Início", href: "#home" },
-    { label: "Benefícios", href: "#benefits" },
-    { label: "Sobre", href: "#about" },
-    { label: "Resultados", href: "#results" },
-    { label: "Planos", href: "#plans" },
-    { label: "Perguntas", href: "#faq" },
+    { label: 'Início', href: '#home' },
+    { label: 'Benefícios', href: '#benefits' },
+    { label: 'Sobre', href: '#about' },
+    { label: 'Resultados/Depoimentos', href: '#results' },
+    { label: 'Planos', href: '#plans' },
+    { label: 'Perguntas', href: '#faq' },
   ];
 
-  const handleScrollTo = (
-    e: React.MouseEvent<HTMLAnchorElement>,
-    href: string,
-  ) => {
+  const handleScrollTo = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const element = document.querySelector(href);
     if (element) {
-      const offset = 100; // height of navbar
+      const offset = 80; // height of navbar
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -44,7 +41,7 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: "smooth",
+        behavior: 'smooth',
       });
       setIsOpen(false);
     }
@@ -52,20 +49,13 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
 
   return (
     <nav
-      className={`
-    fixed inset-x-0 top-0 z-40
-    h-24 lg:h-28
-    bg-black/95
-    backdrop-blur-md
-    border-b border-zinc-900
-    transition-all duration-300
-    ${scrolled ? "shadow-lg shadow-black/40" : ""}
-  `}
+      className="fixed top-0 left-0 right-0 z-40 transition-all duration-300 bg-black border-b border-zinc-900/80 py-3.5 shadow-lg shadow-black/50"
+      id="main-navigation"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="h-full flex items-center justify-between">
-          {" "}
+        <div className="flex items-center justify-between">
           {/* Logo Branding */}
+         {/* Logo Branding */}
           <a
             href="#home"
             onClick={(e) => handleScrollTo(e, "#home")}
@@ -86,6 +76,7 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
   "
             />
           </a>
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-8">
             <div className="flex items-center gap-6">
@@ -101,6 +92,7 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
               ))}
             </div>
           </div>
+
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-3">
             <button
@@ -108,11 +100,7 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
               className="p-1.5 text-zinc-400 hover:text-white bg-zinc-900 border border-white/5 rounded focus:outline-none"
               aria-label="Toggle Menu"
             >
-              {isOpen ? (
-                <X className="w-5 h-5" />
-              ) : (
-                <Menu className="w-5 h-5" />
-              )}
+              {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
         </div>
@@ -123,7 +111,7 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
         {isOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
+            animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             className="md:hidden bg-zinc-950 border-b border-white/5 overflow-hidden"
           >
@@ -140,9 +128,7 @@ export default function Navbar({ onOpenAssessment }: NavbarProps) {
               ))}
               <div className="grid grid-cols-2 gap-3 pt-3">
                 <a
-                  href={getWhatsAppUrl(
-                    "Olá Bruno! Já sou aluno e gostaria de tirar uma dúvida.",
-                  )}
+                  href={getWhatsAppUrl('Olá Bruno! Já sou aluno e gostaria de tirar uma dúvida.')}
                   target="_blank"
                   rel="noreferrer"
                   className="flex items-center justify-center gap-1.5 text-[10px] font-black uppercase tracking-wider text-zinc-400 bg-zinc-900 border border-white/5 rounded py-3 text-center"
