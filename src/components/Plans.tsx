@@ -81,7 +81,7 @@ export default function Plans({ onSelectPlan }: PlansProps) {
         {/* Informative Header Banner explaining plan inclusions */}
         <div className="max-w-5xl mx-auto mb-10 bg-zinc-900/60 border border-white/5 p-4 sm:p-5 rounded-xl text-center">
           <p className="text-xs sm:text-sm text-zinc-300 font-bold uppercase tracking-wide leading-relaxed">
-            💡 <span className="text-red-500 font-black">DÚVIDA FREQUENTE:</span> Todos os planos de acompanhamento <span className="text-white underline">COMPLETO</span> (Mensal ao Anual) já incluem <span className="text-emerald-400 font-black">Treino, Dieta e Protocolo de Peptídeos/Hormônios</span> — tudo sem nenhuma taxa extra! O plano de <span className="text-red-400 font-black">Somente Protocolo</span> é uma opção independente para quem já tem treinador/nutri.
+            💡 <span className="text-red-500 font-black">DÚVIDA FREQUENTE:</span> Todos os planos de acompanhamento <span className="text-white underline">COMPLETO</span> (Mensal ao Anual) já incluem <span className="text-emerald-400 font-black">Treino, Dieta e Montagem de Protocolo</span> — tudo sem nenhuma taxa extra! O plano de <span className="text-red-400 font-black">Somente Protocolo</span> é uma opção independente para quem já tem treinador/nutri.
           </p>
         </div>
 
@@ -163,7 +163,7 @@ export default function Plans({ onSelectPlan }: PlansProps) {
                       {isProtocolo && (
                         <div className="mt-2.5 bg-red-950/30 border border-red-900/30 px-3 py-2 rounded-lg text-left max-w-xl">
                           <span className="text-[9.5px] sm:text-[10px] text-zinc-200 font-bold uppercase tracking-wide block leading-relaxed">
-                            ⚠️ <span className="text-red-400 font-black">SERVIÇO INDEPENDENTE:</span> Este plano é focado <span className="text-white underline font-bold">exclusivamente</span> em protocolo hormonal/peptídeos e suplementação. <span className="text-red-300 font-black">NÃO inclui planilha de treino ou plano alimentar</span> (perfeito para quem já tem treinador/nutri).
+                            ⚠️ <span className="text-red-400 font-black">SERVIÇO INDEPENDENTE:</span> Este plano é focado <span className="text-white underline font-bold">exclusivamente</span> em protocolo. Você pode escolher focar em <span className="text-white font-bold">protocolo hormonal, peptídeos ou apenas suplementação</span>. <span className="text-red-300 font-black">NÃO inclui planilha de treino ou plano alimentar</span> (perfeito para quem já tem treinador/nutri).
                           </span>
                         </div>
                       )}

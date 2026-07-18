@@ -10,6 +10,8 @@ import resultados9 from "./assets/images/resultados9.png";
 import resultados10 from "./assets/images/resultados10.png";
 import resultados11 from "./assets/images/resultados11.png";
 import resultados12 from "./assets/images/resultados12.png";
+import resultados13 from "./assets/images/resultados13.png";
+import resultados14 from "./assets/images/resultados14.png";
 
 export const PLANS: Plan[] = [
   {
@@ -26,7 +28,7 @@ export const PLANS: Plan[] = [
       'Suporte Diretamente com o Bruno pelo WhatsApp',
       'Ajustes no Treino e Dieta Sempre que Necessário',
       'Análise de Exames e Suplementação',
-      'Protocolo Completo de Peptídeos e Hormônios (Sem taxas extras!)'
+      'Montagem e Ajuste de Protocolo (Se indicado — Sem taxas extras!)'
     ]
   },
   {
@@ -44,7 +46,7 @@ export const PLANS: Plan[] = [
       'Suporte Diretamente com o Bruno pelo WhatsApp',
       'Ajustes e Feedback Quinzenal',
       'Análise de Exames e Suplementação',
-      'Protocolo Completo de Peptídeos e Hormônios (Sem taxas extras!)'
+      'Montagem e Ajuste de Protocolo (Se indicado — Sem taxas extras!)'
     ]
   },
   {
@@ -64,7 +66,7 @@ export const PLANS: Plan[] = [
       'Suporte Prioritário com o Bruno pelo WhatsApp',
       'Ajustes Frequentes Conforme sua Evolução',
       'Análise Avançada de Exames e Ergogênicos/Peptídeos',
-      'Protocolo Completo de Peptídeos e Hormônios (Sem taxas extras!)'
+      'Montagem e Ajuste de Protocolo (Se indicado — Sem taxas extras!)'
     ]
   },
   {
@@ -82,7 +84,7 @@ export const PLANS: Plan[] = [
       'Ajuste Total de Macronutrientes e Calorias',
       'Contato Direto com o Bruno pelo WhatsApp',
       'Análise Completa de Exames e Saúde Geral',
-      'Protocolo Completo de Peptídeos e Hormônios (Sem taxas extras!)'
+      'Montagem e Ajuste de Protocolo (Se indicado — Sem taxas extras!)'
     ]
   },
   {
@@ -101,7 +103,7 @@ export const PLANS: Plan[] = [
       'Consultoria para Construção de Hábitos Definitivos',
       'Análise de Exames Periódicos',
       'Ideal para uma Mudança Drástica de Estilo de Vida',
-      'Protocolo Completo de Peptídeos e Hormônios (Sem taxas extras!)'
+      'Montagem e Ajuste de Protocolo (Se indicado — Sem taxas extras!)'
     ]
   },
   {
@@ -114,8 +116,7 @@ export const PLANS: Plan[] = [
     shortName: 'Somente Protocolo',
     features: [
       'Acompanhamento de 8 Semanas Focado em Protocolo',
-      'Protocolo Exclusivo de Peptídeos e Hormônios (se indicado)',
-      'Planejamento de Suplementação Inteligente',
+      'Você escolhe: Protocolo Hormonal, Peptídeos ou apenas Suplementação',
       'Suporte Direto com o Bruno pelo WhatsApp',
       'Análise de Exames Laboratoriais Otimizada',
       '⚠️ Sem Planilha de Treino ou Plano Alimentar (Ideal para quem já tem treinador/nutricionista)'
@@ -212,6 +213,32 @@ export const TRANSFORMATION_CASES: TransformationCase[] = [
     duration: "3 meses",
     beforeImg: resultados11,
     afterImg: resultados11,
+    stats: {
+      weight: "Transformação expressiva",
+      fatPercentage: "Redução visível do percentual de gordura",
+    },
+  },
+    {
+    id: "11",
+    name: "Aluno Team BG",
+    age: 29,
+    goal: "Emagrecimento",
+    duration: "3 meses",
+    beforeImg: resultados13,
+    afterImg: resultados13,
+    stats: {
+      weight: "Transformação expressiva",
+      fatPercentage: "Redução visível do percentual de gordura",
+    },
+  },
+    {
+    id: "11",
+    name: "Aluno Team BG",
+    age: 29,
+    goal: "Emagrecimento",
+    duration: "3 meses",
+    beforeImg: resultados14,
+    afterImg: resultados14,
     stats: {
       weight: "Transformação expressiva",
       fatPercentage: "Redução visível do percentual de gordura",
